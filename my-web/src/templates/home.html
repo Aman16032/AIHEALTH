@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Assistant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            background-color: #f0f2f6;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #4CAF50;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #4CAF50, #45a049);
+            color: white;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            margin: 20px 0;
+        }
+        .card-title {
+            color: #4CAF50;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Healthcare Assistant</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assistant"> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Welcome to the Healthcare Assistant</h1>
+        <p>Your personal healthcare companion</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Symptom Checker</h5>
+                        <p class="card-text">Check your symptoms and get advice on what to do next.</p>
+                        <a href="/assistant" class="btn btn-primary">Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Appointment Scheduler</h5>
+                        <p class="card-text">Schedule an appointment with a healthcare professional.</p>
+                        <a href="/appointment" class="btn btn-primary">Schedule Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Medication Reminder</h5>
+                        <p class="card-text">Set up reminders to take your medication on time.</p>
+                        <a href="/reminder" class="btn btn-primary">Set Reminder</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Healthcare Assistant. All rights reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

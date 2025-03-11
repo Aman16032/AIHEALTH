@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    background-color: #f0f2f6;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #4CAF50;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #4CAF50;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
